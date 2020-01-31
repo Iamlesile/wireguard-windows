@@ -28,6 +28,7 @@ func (d *dictionary) Lookup(key string) (data string, ok bool) {
 func init() {
 	dict := map[string]catalog.Dictionary{
 		"en": &dictionary{index: enIndex, data: enData},
+		"fr": &dictionary{index: frIndex, data: frData},
 		"sl": &dictionary{index: slIndex, data: slData},
 	}
 	fallback := language.MustParse("en")
@@ -355,6 +356,74 @@ const enData string = "" + // Size: 5179 bytes
 	"itten frame\x02http2: Framer %[1]p: wrote %[2]v\x02http2: Framer %[1]p: " +
 	"read %[2]v\x02http2: decoded hpack field %+[1]v"
 
+var frIndex = []uint32{ // 176 elements
+	// Entry 0 - 1F
+	0x00000000, 0x00000000, 0x00000000, 0x00000000,
+	0x00000000, 0x00000000, 0x00000000, 0x00000000,
+	0x00000000, 0x00000000, 0x00000000, 0x00000000,
+	0x00000000, 0x00000020, 0x0000003e, 0x0000005e,
+	0x00000082, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	// Entry 20 - 3F
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	// Entry 40 - 5F
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	// Entry 60 - 7F
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	// Entry 80 - 9F
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000a6,
+	0x000000a6, 0x000000a6, 0x000000a6, 0x000000dc,
+	0x00000123, 0x00000123, 0x00000155, 0x000001c7,
+	0x000001c7, 0x000001c7, 0x000001c7, 0x000001c7,
+	0x000001c7, 0x000001c7, 0x00000220, 0x00000220,
+	// Entry A0 - BF
+	0x00000220, 0x00000220, 0x00000220, 0x00000220,
+	0x00000220, 0x00000220, 0x00000220, 0x00000220,
+	0x00000220, 0x00000220, 0x00000220, 0x00000220,
+	0x00000220, 0x00000220, 0x00000220, 0x00000220,
+} // Size: 716 bytes
+
+const frData string = "" + // Size: 544 bytes
+	"\x14\x01\x81\x01\x00\x02\x0b\x02%[1]d year\x00\x0c\x02%[1]d years\x14" +
+	"\x01\x81\x01\x00\x02\x0a\x02%[1]d day\x00\x0b\x02%[1]d days\x14\x01\x81" +
+	"\x01\x00\x02\x0b\x02%[1]d hour\x00\x0c\x02%[1]d hours\x14\x01\x81\x01" +
+	"\x00\x02\x0d\x02%[1]d minute\x00\x0e\x02%[1]d minutes\x14\x01\x81\x01" +
+	"\x00\x02\x0d\x02%[1]d second\x00\x0e\x02%[1]d seconds\x14\x01\x81\x01" +
+	"\x00\x02\x16\x02Imported %[1]d tunnel\x00\x17\x02Imported %[1]d tunnels" +
+	"\x14\x02\x80\x01\x02\x1f\x02Imported %[1]d of %[2]d tunnel\x00 \x02Impor" +
+	"ted %[1]d of %[2]d tunnels\x14\x01\x81\x01\x00\x02\x14\x02Delete %[1]d t" +
+	"unnel\x00\x15\x02Delete %[1]d tunnels\x14\x01\x81\x01\x00\x024\x02Are yo" +
+	"u sure you would like to delete %[1]d tunnel?\x005\x02Are you sure you w" +
+	"ould like to delete %[1]d tunnels?\x14\x01\x81\x01\x00\x02'\x02%[1]d tun" +
+	"nel was unable to be removed.\x00)\x02%[1]d tunnels were unable to be re" +
+	"moved."
+
 var slIndex = []uint32{ // 176 elements
 	// Entry 0 - 1F
 	0x00000000, 0x00000007, 0x00000058, 0x00000070,
@@ -507,4 +576,4 @@ const slData string = "" + // Size: 6016 bytes
 	"kvirja\x02http2: Framer %[1]p: zapisano %[2]v\x02http2: Framer %[1]p: pr" +
 	"ebrano %[2]v\x02http2: dekodirano polje hpack %+[1]v"
 
-	// Total table size 12627 bytes (12KiB); checksum: 7F514737
+	// Total table size 13887 bytes (13KiB); checksum: 6AAF670A
